@@ -45,14 +45,21 @@ NOTE: Anything with single quotes is to show it is a string.  Don’t paste the 
    
 ## Task E: Count the number of sequences in the cDNA files.
 These sequences are in FASTA format which means each sequence record starts with a ‘>’.  Thus if you know how to count the number of lines in a file that starts with  ‘>’, you will know how many sequences are in the files.  Your task is to count the number of sequences in each of the three files you downloaded.  Copy and paste the command lines you used along with the sequence counts in a text file. Place this text file in the Homework folder on the Desktop.
+
 CLUE A: To look at the top and bottom 10 lines of each file, use the ‘head’ and ‘tail’ command, respectively.  To see all lines in a file, use the ‘cat’ command.  These are big files so it will take a while to send all the data to the screen.  NOTE: You can stop a command by pressing CTRL-C on your keyboard.
+
 CLUE B: To find a text pattern (e.g. ‘>’) in a file, use the ‘grep’ command.  
+
 CLUE C: To count the number of lines in a file, use the ‘wc -l’ command.
+
 CLUE D: To string multiple commands together, use the pipe command ‘|’. 
+
 For example, this command line will open a file and count the number of lines in the file:
+
 ```
 cat Homo_sapiens.GRCh38.cdna.all.fa | wc -l
 ```
+
 For example, this command line will open a file and count the number of lines that have the pattern ‘AAATTTGGG’:
 ```
 cat Homo_sapiens.GRCh38.cdna.all.fa | grep ‘AAATTTGGG’
